@@ -2,33 +2,42 @@ import 'dart:convert';
 
 import 'package:dear_friend/models/api_response.dart';
 import 'package:dear_friend/models/post_data.dart';
+import 'package:dear_friend/models/post_insert.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:folding_cell/folding_cell.dart';
 
 class PostService {
-  static const API = "http://10.0.2.2:1337";
+  static const API = "https://dear-friend-timathon.herokuapp.com";
 
   Future<APIResponse<List<PostForListing>>> getPostsList() {
-    return http.get(API + "/commits").then((data){
-      if(data.statusCode == 200){
+    return http.get(API + "/commits").then((data) {
+      if (data.statusCode == 200) {
+        final jsonData = json.decode(data.body);
+        final posts = <PostForListing>[];
 
-        final jsonData = json.decode(data.body) ;
-        final posts = <PostForListing>[] ;
-
-        for(var item in jsonData){
-          final post = PostForListing(
-            friendName: item["friend_name"] ,
-            cartoonName: item["favourite_cartoon"] ,
-          );
-          posts.add(post) ;
+        for (var item in jsonData) {
+          posts.add(PostForListing.fromJson(item));
         }
-        return APIResponse<List<PostForListing>>(data: posts) ;
+        return APIResponse<List<PostForListing>>(data: posts);
       }
-        return APIResponse<List<PostForListing>>(error: true ,errorMessage: "An Error Occurred :(" ) ;
+      return APIResponse<List<PostForListing>>(
+          error: true, errorMessage: "An Error Occurred :(");
+    }).catchError((_) => APIResponse<List<PostForListing>>(
+        error: true, errorMessage: "An Error Occurred :("));
+  }
 
-    })
-        .catchError((_) =>
-        APIResponse<List<PostForListing>>(error: true ,errorMessage: "An Error Occurred :(" )) ;
+  Future<APIResponse<bool>> createPost(PostInsert item) {
+    return http.post(API + "/commits", body: json.encode(item.toJson())).then(
+        (data) {
+      if (data.statusCode == 200) {
+        return APIResponse<bool>(data: true);
+      }
+      return APIResponse<bool>(
+          error: true, errorMessage: "An error Occurred !");
+    }).catchError((_) =>
+        APIResponse<bool>(error: true, errorMessage: "An error Occurred !"));
   }
 
 //  List<PostForListing> getPostsList() {

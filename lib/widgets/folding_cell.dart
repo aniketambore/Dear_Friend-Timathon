@@ -21,10 +21,10 @@ class _FoldingCellState extends State<FoldingCell> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    _fetchNotes();
+    _fetchPosts();
   }
 
-  _fetchNotes() async {
+  _fetchPosts() async {
     setState(() {
       _isLoading = true;
     });
@@ -44,6 +44,8 @@ class _FoldingCellState extends State<FoldingCell> {
               child: CircularProgressIndicator(),
             )
           : ListView.builder(
+//              reverse: true,
+//              shrinkWrap: true,
               itemCount: _apiResponse.data.length,
               itemBuilder: (context, index) {
                 return SimpleFoldingCell.create(
@@ -87,7 +89,8 @@ class _FoldingCellState extends State<FoldingCell> {
                   alignment: Alignment.center,
                   child: Text(
                     // "CARD - $index",
-                    "Dear ${_apiResponse.data[index].friendName}",
+                    //"Dear ${_apiResponse.data[index].friendName}",
+                    "Dear ${_apiResponse.data[_apiResponse.data.length - index - 1].friendName}",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 20.0,
@@ -136,7 +139,8 @@ class _FoldingCellState extends State<FoldingCell> {
                   alignment: Alignment.topCenter,
                   child: Text(
                     //"CARD TITLE - $index",
-                    "Dear ${_apiResponse.data[index].friendName}",
+                    //"Dear ${_apiResponse.data[index].friendName}",
+                    "Dear ${_apiResponse.data[_apiResponse.data.length - index - 1].friendName}",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 20.0,
@@ -150,15 +154,16 @@ class _FoldingCellState extends State<FoldingCell> {
                     children: [
                       Image(
                         image: NetworkImage(
-                            "${getCartoon[_apiResponse.data[index].cartoonName][0]}"
+                            //"${getCartoon[_apiResponse.data[index].cartoonName][0]}"
+                            "${getCartoon[_apiResponse.data[_apiResponse.data.length - index - 1].cartoonName][0]}"
                             //"https://thumbs.gfycat.com/InferiorShimmeringGoldfish-max-1mb.gif"
                             ),
                       ),
                       Expanded(
                         child: Center(child: Text(
-                            //"Simpson is mw bro, Simpson is mw bro,",
                             //"${posts[index].friendshipQuotes}"
-                            "${getCartoon[_apiResponse.data[index].cartoonName][1]}")),
+                            //"${getCartoon[_apiResponse.data[index].cartoonName][1]}"
+                            "${getCartoon[_apiResponse.data[_apiResponse.data.length - index - 1].cartoonName][1]}")),
                       )
                     ],
                   ),

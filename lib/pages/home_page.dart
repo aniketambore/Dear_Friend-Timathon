@@ -40,18 +40,26 @@ class _MyHomePageState extends State<MyHomePage> {
                 parent: animationController,
                 curve: Curves.ease,
               ),
-              child: Icon(
-                Icons.favorite,
-                color: Colors.white,
+//              child: Icon(
+//                Icons.favorite,
+//                color: Colors.white,
+//              ),
+              child: Image.network(
+                "https://media4.giphy.com/media/xUOxf7gg8AztZMfyMM/giphy.gif",
+                width: 40,
+                color: Colors.grey,
               ),
             ),
         highlightedBuilder: (animationController, index) => ScaleTransition(
               scale: CurvedAnimation(
                   parent: animationController, curve: Curves.ease),
-              child: Icon(
-                Icons.star,
-                color: Colors.pink,
-              ),
+//              child: Icon(
+//                Icons.star,
+//                color: Colors.pink,
+//              ),
+              child: Image.network(
+                  "https://media4.giphy.com/media/xUOxf7gg8AztZMfyMM/giphy.gif",
+                  width: 40),
             ));
   }
 }
