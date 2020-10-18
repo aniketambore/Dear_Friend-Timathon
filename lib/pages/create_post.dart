@@ -24,14 +24,14 @@ class _CreatePostState extends State<CreatePost> {
     return Stack(
       fit: StackFit.expand,
       children: [
-        Opacity(
-          opacity: 0.8,
-          child: Image.network(
-            //"assets/images/Background2.jpg",
-            "https://i.pinimg.com/originals/30/52/13/3052136d9b22f4bb60d8457821d81290.gif",
-            fit: BoxFit.cover,
-          ),
-        ),
+//        Opacity(
+//          opacity: 0.8,
+//          child: Image.network(
+//            //"assets/images/Background2.jpg",
+//            "https://i.pinimg.com/originals/30/52/13/3052136d9b22f4bb60d8457821d81290.gif",
+//            fit: BoxFit.cover,
+//          ),
+//        ),
         Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -67,10 +67,10 @@ class _CreatePostState extends State<CreatePost> {
           return SimpleDialog(
             title: Text("Create Your Dear Friend Post ?"),
             children: [
-              SimpleDialogOption(
-                child: Image.network(
-                    "https://thumbs.gfycat.com/RecklessEagerGraysquirrel-max-1mb.gif"),
-              ),
+//              SimpleDialogOption(
+//                child: Image.network(
+//                    "https://thumbs.gfycat.com/RecklessEagerGraysquirrel-max-1mb.gif"),
+//              ),
               SimpleDialogOption(
                   child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,

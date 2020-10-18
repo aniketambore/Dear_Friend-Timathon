@@ -15,6 +15,63 @@ class _UploadPostState extends State<UploadPost> {
   TextEditingController _myNameController = TextEditingController();
   TextEditingController _favouriteCartoonController = TextEditingController();
   PostService get postService => GetIt.I<PostService>();
+  var _value;
+
+  DropdownButton _itemDown() => DropdownButton<String>(
+        items: [
+          DropdownMenuItem(
+            onTap: () {
+              setState(() {
+                _favouriteCartoonController.text = "spongebob squarepants";
+              });
+            },
+            value: "1",
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                //Icon(Icons.build),
+                Image.network(
+                  "https://www.animatedimages.org/data/media/1556/animated-spongebob-image-0016.gif",
+                  width: 40,
+                ),
+                SizedBox(width: 10),
+                Text(
+                  "spongebob squarepants",
+                ),
+              ],
+            ),
+          ),
+          DropdownMenuItem(
+            onTap: () {
+              setState(() {
+                _favouriteCartoonController.text = "Lonney Tunnes";
+              });
+            },
+            value: "2",
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                //Icon(Icons.build),
+                Image.network(
+                  "https://media2.giphy.com/media/hT5kGEx7MhcyNtQWaL/giphy.gif",
+                  width: 40,
+                ),
+                SizedBox(width: 10),
+                Text(
+                  "Lonney Tunnes",
+                ),
+              ],
+            ),
+          ),
+        ],
+        onChanged: (value) {
+          setState(() {
+            _value = value;
+          });
+        },
+        value: _value,
+        isExpanded: true,
+      );
 
   @override
   Widget build(BuildContext context) {
@@ -81,14 +138,17 @@ class _UploadPostState extends State<UploadPost> {
             ),
             title: Container(
               width: 250,
-              child: TextField(
-                controller: _favouriteCartoonController,
-                decoration: InputDecoration(
-                    hintText: "What Is Your Friend Favourite Cartoon?",
-                    border: InputBorder.none),
-              ),
+              child: _itemDown(),
+//              child: TextField(
+//                controller: _favouriteCartoonController,
+//                decoration: InputDecoration(
+//                    hintText: "What Is Your Friend Favourite Cartoon?",
+//                    border: InputBorder.none),
+//              ),
             ),
           ),
+//          Divider(),
+//          _itemDown()
         ],
       ),
     );

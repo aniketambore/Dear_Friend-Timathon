@@ -16,6 +16,7 @@ class _FoldingCellState extends State<FoldingCell> {
   PostService get service => GetIt.I<PostService>();
   APIResponse<List<PostForListing>> _apiResponse;
   bool _isLoading = false;
+  var _value;
 
   @override
   void initState() {
@@ -44,8 +45,6 @@ class _FoldingCellState extends State<FoldingCell> {
               child: CircularProgressIndicator(),
             )
           : ListView.builder(
-//              reverse: true,
-//              shrinkWrap: true,
               itemCount: _apiResponse.data.length,
               itemBuilder: (context, index) {
                 return SimpleFoldingCell.create(
@@ -77,11 +76,12 @@ class _FoldingCellState extends State<FoldingCell> {
       return Stack(
         fit: StackFit.expand,
         children: [
-          Image.asset(
-            "assets/images/cell_bg.gif",
-            fit: BoxFit.cover,
-          ),
+//          Image.asset(
+//            "assets/images/cell_bg.gif",
+//            fit: BoxFit.cover,
+//          ),
           Container(
+            color: Colors.lightGreen,
             alignment: Alignment.center,
             child: Stack(
               children: [
@@ -126,12 +126,12 @@ class _FoldingCellState extends State<FoldingCell> {
       return Stack(
         fit: StackFit.expand,
         children: [
-          Image.asset(
-            "assets/images/cell_bg.gif",
-            fit: BoxFit.cover,
-          ),
+//          Image.asset(
+//            "assets/images/cell_bg.gif",
+//            fit: BoxFit.cover,
+//          ),
           Container(
-            //color: Colors.black.withOpacity(0.8),
+            color: Colors.lightGreen,
             padding: EdgeInsets.only(top: 20),
             child: Stack(
               children: [
