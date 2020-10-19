@@ -13,7 +13,10 @@ class _CreatePostState extends State<CreatePost> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Create Post"),
+        title: Text(
+          "Create Post",
+          style: TextStyle(color: Colors.tealAccent),
+        ),
         centerTitle: true,
       ),
       body: splashPostScreen(),
@@ -25,10 +28,9 @@ class _CreatePostState extends State<CreatePost> {
       fit: StackFit.expand,
       children: [
 //        Opacity(
-//          opacity: 0.8,
-//          child: Image.network(
-//            //"assets/images/Background2.jpg",
-//            "https://i.pinimg.com/originals/30/52/13/3052136d9b22f4bb60d8457821d81290.gif",
+//          opacity: 0.7,
+//          child: Image.asset(
+//            "assets/images/space_bg.gif",
 //            fit: BoxFit.cover,
 //          ),
 //        ),
@@ -50,7 +52,8 @@ class _CreatePostState extends State<CreatePost> {
                     style: TextStyle(color: Colors.white, fontSize: 22.0),
                   ),
                   color: Colors.deepOrange,
-                  onPressed: () => selectPost(context),
+                  onPressed: () =>
+                      Navigator.of(context).pushNamed("/upload_post"),
                 ),
               )
             ],
@@ -82,10 +85,7 @@ class _CreatePostState extends State<CreatePost> {
                   FlatButton(
                       color: Colors.deepOrange,
                       onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => UploadPost()));
+                        Navigator.of(context).pushNamed("/upload_post");
                       },
                       child: Text("Let's Go!")),
                 ],

@@ -52,7 +52,7 @@ class _FoldingCellState extends State<FoldingCell> {
                   innerWidget: _buildInnerWidget(index),
                   cellSize: Size(MediaQuery.of(context).size.width, 125),
                   padding: EdgeInsets.all(15),
-                  animationDuration: Duration(milliseconds: 300),
+                  animationDuration: Duration(milliseconds: 500),
                   borderRadius: 10,
                   onOpen: () => print("$index cell opened"),
                   onClose: () => print("$index cell closed"),
@@ -77,11 +77,11 @@ class _FoldingCellState extends State<FoldingCell> {
         fit: StackFit.expand,
         children: [
 //          Image.asset(
-//            "assets/images/cell_bg.gif",
+//            "assets/images/fold_cell.gif",
 //            fit: BoxFit.cover,
 //          ),
           Container(
-            color: Colors.lightGreen,
+            color: Theme.of(context).accentColor,
             alignment: Alignment.center,
             child: Stack(
               children: [
@@ -127,11 +127,12 @@ class _FoldingCellState extends State<FoldingCell> {
         fit: StackFit.expand,
         children: [
 //          Image.asset(
-//            "assets/images/cell_bg.gif",
+//            //"assets/images/colorful_bg.jpg",
+//            "https://cutewallpaper.org/21/background-gif-html/15-CSS-Animated-Backgrounds-Pintire.gif",
 //            fit: BoxFit.cover,
 //          ),
           Container(
-            color: Colors.lightGreen,
+            color: Colors.black,
             padding: EdgeInsets.only(top: 20),
             child: Stack(
               children: [

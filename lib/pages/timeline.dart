@@ -11,21 +11,23 @@ class _TimelineState extends State<Timeline> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.deepPurpleAccent,
         title: Text(
-          "Timeline",
+          "Dear Friend",
+          style: TextStyle(color: Colors.tealAccent),
         ),
         centerTitle: true,
       ),
       body: Stack(
         fit: StackFit.expand,
         children: [
-          Opacity(
-            opacity: 0.8,
-            child: Image.asset(
-              "assets/images/Background2.jpg",
-              fit: BoxFit.cover,
-            ),
-          ),
+//          Opacity(
+//            opacity: 0.7,
+//            child: Image.asset(
+//              "assets/images/space_bg.gif",
+//              fit: BoxFit.cover,
+//            ),
+//          ),
           FoldingCell()
         ],
       ),

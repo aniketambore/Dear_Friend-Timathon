@@ -1,6 +1,8 @@
 import 'package:dear_friend/pages/create_post.dart';
 import 'package:dear_friend/pages/timeline.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:page_view_indicator/page_view_indicator.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -40,26 +42,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 parent: animationController,
                 curve: Curves.ease,
               ),
-//              child: Icon(
-//                Icons.favorite,
-//                color: Colors.white,
-//              ),
-              child: Image.network(
-                "https://media4.giphy.com/media/xUOxf7gg8AztZMfyMM/giphy.gif",
-                width: 40,
-                color: Colors.grey,
+              child: Icon(
+                FontAwesomeIcons.solidStar,
+                color: Colors.deepPurpleAccent,
               ),
             ),
         highlightedBuilder: (animationController, index) => ScaleTransition(
               scale: CurvedAnimation(
                   parent: animationController, curve: Curves.ease),
-//              child: Icon(
-//                Icons.star,
-//                color: Colors.pink,
-//              ),
-              child: Image.network(
-                  "https://media4.giphy.com/media/xUOxf7gg8AztZMfyMM/giphy.gif",
-                  width: 40),
+              child: Icon(
+                FontAwesomeIcons.grinHearts,
+                color: Colors.deepPurpleAccent,
+              ),
             ));
   }
 }
