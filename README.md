@@ -1,43 +1,28 @@
-_15 October 2020, 2:00 pm_
-# 👨‍💻 BCE - GD 👨💻
+# Dear Friend
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c26a6644-9f26-4719-9a1a-f4f896884b60/deploy-status)](https://app.netlify.com/sites/dear-friend/deploys)
 
-# Topic
-```Identify the set of skills that the current set of college students should develop in order to prepare for the entering the world of careers in the post-pandemic times.```
+<img src="https://www.tonner.org/worldlycats/wc6-tomjerry.gif" />
 
----
-
-|Name| Roles |
-| --- | --- |
-| Anuj Shah | Chairpersion |
-| Aniket Ambore | Co-Ordinator |
-| Akhil Sankati | Minute Taker |
-| Burhan Khan | Member |
-| Immam Maddy | Member |
-| Sucharitha Gurudu | Member |
+## [Dear Friend](https://dear-friend.netlify.app/#/) is a simple _Social networking_ kind of Application for Kids.This Application is created for one online hackathon called [Timathon](https://twtcodejam.net/timathon/).
 
 ---
 
-## Agenda
-```To Help Students Overcome the difficulties, in order to thrive in the industry.```
+| Application Screenshots |
+| --- |
+| <img src="https://i.ibb.co/82DjC6N/screenshot-1.png" width="50%" /> |
+| <img src="https://i.ibb.co/4Yb3tv2/screenshot-2.png" width="50%" /> |
+| <img src="https://i.ibb.co/2c29H0t/screenshot-3.png" width="50%" /> |
+| <img src="https://i.ibb.co/vhvnPwz/screenshot-4.png" width="50%" /> |
+| <img src="https://i.ibb.co/NYgP0hd/screenshot-5.png" width="50%" /> |
+| <img src="https://i.ibb.co/sCnf26M/screenshot-6.png" width="50%" /> |
+| <img src="https://i.ibb.co/Wz78cwz/screenshot-7.png" width="50%" /> |
+| <img src="https://i.ibb.co/xS6Qsp3/screenshot-8.png" width="50%" /> |
 
 ---
 
-## Decision Reached
-- Students Should learn how to efficiently communicate through online platforms as well as use technology.
-- Encourage Student to belive in their ability to think mathematically.
-- Critical Thinking expands students knowledge base because it requires knowing reasons.
+## Do Support the project and vote for Timathon :)
+<img src="https://thumbs.gfycat.com/LikableCelebratedHart-small.gif" />
 
----
 
-## Actions Item
-- Proper Communication.
-- Gather data, opnions and arguments.
-- Analyse the gathered data.
-- Present or communicate.
 
----
 
-## Open Issues
-- Arrogrance and Intolerance
-- Lack of electronic gadgets
-- Network and Finical issues.
