@@ -1,16 +1,43 @@
-# Dear Friend
+_15 October 2020, 2:00 pm_
+# 👨‍💻 BCE - GD 👨💻
 
-A new Flutter project.
+# Topic
+```Identify the set of skills that the current set of college students should develop in order to prepare for the entering the world of careers in the post-pandemic times.```
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+|Name| Roles |
+| --- | --- |
+| Anuj Shah | Chairpersion |
+| Aniket Ambore | Co-Ordinator |
+| Akhil Sankati | Minute Taker |
+| Burhan Khan | Member |
+| Immam Maddy | Member |
+| Sucharitha Gurudu | Member |
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Agenda
+```To Help Students Overcome the difficulties, in order to thrive in the industry.```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## Decision Reached
+- Students Should learn how to efficiently communicate through online platforms as well as use technology.
+- Encourage Student to belive in their ability to think mathematically.
+- Critical Thinking expands students knowledge base because it requires knowing reasons.
+
+---
+
+## Actions Item
+- Proper Communication.
+- Gather data, opnions and arguments.
+- Analyse the gathered data.
+- Present or communicate.
+
+---
+
+## Open Issues
+- Arrogrance and Intolerance
+- Lack of electronic gadgets
+- Network and Finical issues.

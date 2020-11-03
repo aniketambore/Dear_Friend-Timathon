@@ -1,22 +1,98 @@
 var getCartoon = {
-  "spongebob squarepants": [
-    "https://www.animatedimages.org/data/media/1556/animated-spongebob-image-0016.gif",
-    "Friendship is born at that moment when one person says to another: ‘What! You too? I thought I was the only one."
+  "Tom And Jerry": [
+    "https://i.ibb.co/Rh5bBng/tom-and-jerry.gif",
+    "A person who irritate you always the one who loves you but fells to express it."
   ],
-  "Lonney Tunnes": [
-    "https://media2.giphy.com/media/hT5kGEx7MhcyNtQWaL/giphy.gif",
-    "The language of friendship is not words but meanings"
+  "Lonney Tunes": [
+    "https://i.ibb.co/Yy30S7p/loony-tunes.gif",
+    "You don't know me very well, do you?"
   ],
-  "South Park": [
-    "https://thumbs.gfycat.com/MindlessEvilIcterinewarbler-max-1mb.gif",
-    "There are no strangers here; Only friends you haven’t yet met."
+  "Scooby Doo": [
+    "https://i.ibb.co/v3Yc6SJ/scooby-doo.gif",
+    "Looks like we've got another mystery on our hands."
   ],
-  "Gravity Falls": [
-    "https://i.pinimg.com/originals/d0/80/91/d0809168a687fcd73fe865ad0abb02ff.gif",
-    "A real friend is one who walks in when the rest of the world walks out."
+  "Sponge Bob": [
+    "https://i.ibb.co/JscNd8N/sponge-bob.gif",
+    "F is for friends who do stuff together!."
+  ],
+  "Avatar": [
+    "https://i.ibb.co/VQzYT5K/avatar.gif",
+    "Life happens wherever you are, whether you make it or not."
   ],
   "The Simpsons": [
-    "https://thumbs.gfycat.com/InferiorShimmeringGoldfish-max-1mb.gif",
-    "A good friend is like a four-leaf clover; hard to find and lucky to have."
+    "https://i.ibb.co/VjCPNSx/simpsons.gif",
+    "Trying is the first step towards failure."
+  ],
+  "Phineas And Ferb": [
+    "https://i.ibb.co/jWWnD1x/phineas6.gif",
+    "Put your hand down Ferb."
+  ],
+  "Teen Titans": [
+    "https://i.ibb.co/LRY2GJ2/teen-titans.gif",
+    "I always thought you were funny, BB. But I guess looks aren't everything."
+  ],
+  "The Bugs Bunny Show": [
+    "https://i.ibb.co/Drcrhxm/bunny.gif",
+    "Don’t take life too seriously. You’ll never get out alive!"
+  ],
+  "Rick And Morty": [
+    "https://i.ibb.co/Z2B5z8w/rick.gif",
+    "What People Call \"Love\" Is Just A Chemical Reaction..."
+  ],
+  "Gravity Falls": [
+    "https://i.ibb.co/tJFxFzp/gravity.gif",
+    "I can't thank you enough... that's enough."
+  ],
+  "DuckyTales": [
+    "https://i.ibb.co/JK3PLZ9/ducky.png",
+    "40 years of searching, and I end up with Collie Baba's dirty laundry!"
+  ],
+  "Pokémon": [
+    "https://i.ibb.co/QKRDdTN/pokemon.gif",
+    "We do have a lot in common. The same earth, the same air, the same sky."
+  ],
+  "The Pink Panther": [
+    "https://i.ibb.co/4SVgzxk/pinkpanther.gif",
+    "I am of the same notion as you."
+  ],
+  "Adventure Time": [
+    "https://i.ibb.co/vJ9XPNw/adventure.gif",
+    "Hello from adventure time"
+  ],
+  "Popeye The Sailor": [
+    "https://i.ibb.co/7bGyVnS/popeye.gif",
+    "I yam what I yam an' tha's all I yam"
+  ],
+  "The Powerpuff Girls": [
+    "https://i.ibb.co/GdTXp69/powerpuff.gif",
+    "There's nothing wrong with talking to yourself."
+  ],
+  "Spiderman": [
+    "https://i.ibb.co/dJ5YYfF/spiderman.gif",
+    "What we believe we know may not be the truth."
+  ],
+  "Dragon Ball Z": [
+    "https://i.ibb.co/bQmNHKr/drangonball.gif",
+    "I would rather be a brainless monkey than a heartless monster."
+  ],
+  "Ben10": [
+    "https://i.ibb.co/KFZMTt7/ben10.gif",
+    "How dumb do you think I am?"
+  ],
+  "The Smurfs": [
+    "https://i.ibb.co/QPCJVvJ/smurfs.gif",
+    "The most I can do for my friend is to simple be a friend"
+  ],
+  "Doremon": [
+    "https://i.ibb.co/qsJLC0x/doremon.gif",
+    "Why to have a shizuka... If you can have someone like doreamon."
+  ],
+  "Bob The Builder": [
+    "https://i.ibb.co/XJ8M0HK/bob-builder.gif",
+    "Your life is so messed up, even Bob The Builder can't fix it."
+  ],
+  "Mr Bean": [
+    "https://i.ibb.co/ws2QcQ0/mrbean.png",
+    "I have always worried about things more than I should."
   ]
 };

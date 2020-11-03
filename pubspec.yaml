@@ -33,6 +33,10 @@ dependencies:
   get_it: ^5.0.1
   http: ^0.12.2
   font_awesome_flutter: ^8.10.0
+  animated_text_kit: ^2.2.0
+  flutter_staggered_animations: ^0.1.2
+  google_fonts: ^1.1.1
+  splashscreen: ^1.2.0
 
 dev_dependencies:
   flutter_test:
@@ -53,9 +57,9 @@ flutter:
   assets:
     - assets/images/Open.png
     - assets/images/close.png
-    - assets/images/space_bg.gif
     - assets/images/fold_cell.gif
-    - assets/images/spaceship.gif
+    - assets/images/space.jpg
+    - assets/images/card.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

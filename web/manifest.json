@@ -1,11 +1,11 @@
 {
-    "name": "dear_friend",
-    "short_name": "dear_friend",
+    "name": "Dear Friend",
+    "short_name": "Dear Friend",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Dear Friend - A Web App For Kids.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

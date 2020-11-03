@@ -6,7 +6,7 @@ Widget linearProgress() {
     padding: const EdgeInsets.only(bottom: 10.0),
     child: Container(
       child: LinearProgressIndicator(
-        valueColor: AlwaysStoppedAnimation(Colors.purple),
+        valueColor: AlwaysStoppedAnimation(Colors.lightGreenAccent),
       ),
     ),
   );
