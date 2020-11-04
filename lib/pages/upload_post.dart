@@ -674,7 +674,7 @@ class _UploadPostState extends State<UploadPost> {
                   decoration: InputDecoration(
                       hintText: "What Is Your Name?", border: InputBorder.none),
                   validator: (val) {
-                    if (val.trim().length < 2 || val.isEmpty) {
+                    if (val.trim().length < 3 || val.isEmpty) {
                       return "Your Name is too short";
                     } else if (val.trim().length > 12) {
                       return "Your Name is too long";
