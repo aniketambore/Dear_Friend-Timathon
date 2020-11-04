@@ -37,7 +37,8 @@
 
 ---
 
-## [Dear Friend](https://dear-friend.netlify.app/#/) , Since the application is deployed live you guys can test out it on your web.
+## [👆 Dear Friend](https://dear-friend.netlify.app/#/) , Since the application is deployed on live server, you guys can test out it on your web.
+## [👆 Click Me To Test - Dear Friend](https://dear-friend.netlify.app/#/)
 
 ---
 
